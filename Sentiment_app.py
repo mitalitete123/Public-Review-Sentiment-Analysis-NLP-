@@ -5,7 +5,6 @@ import joblib
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-from text_preprocess import preprocess_text
 from sklearn.model_selection import train_test_split
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.pipeline import Pipeline
@@ -23,6 +22,8 @@ nltk.download('stopwords', download_dir='./nltk_data')
 nltk.download('wordnet')
 nltk.download('omw-1.4')
 nltk.download('movie_reviews')
+
+from text_preprocess import preprocess_text
 
 # ---------- Load sample dataset (NLTK movie_reviews) if user doesn't upload
 @st.cache_data
