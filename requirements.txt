@@ -1,0 +1,6 @@
+joblib==1.4.2
+scikit-learn
+pandas
+nltk
+matplotlib
+seaborn
